@@ -1,0 +1,34 @@
+<!-- <h1>Welcome {{user}}</h1> -->
+<h1 >Hellooo... <button  style="margin-top: 10px; float: right; margin-right: 10px;" class="btn btn-success" (click)="logout()">Logout</button></h1>
+
+
+<div class="container">
+
+    <div class="box">
+        <!-- <form  [formGroup]="dashboardForm"> -->
+        <form>
+
+            <div class="date ">
+                <!-- <input type="date" class="form-control mt-5 mb-5" > -->
+                <input type="date"  [(ngModel)]="date" class="form-control mt-5 mb-5" name="date">
+                <!-- <input type="date" class="form-control mt-5 mb-5"   formControlName="date"> -->
+
+            </div>
+            <div class="eventdescription">
+                <!-- <input type="text" placeholder="Event description" class="form-control mb-5" > -->
+                <input type="text" placeholder="Event description"  [(ngModel)]="event" class="form-control mb-5"
+                    name="event">
+                <!-- <input type="text" placeholder="Event description" class="form-control mb-5"   formControlName="event"> -->
+
+            </div>
+            <div class="buttonevent mt-5">
+                <!-- <button class="me-5">Add event</button> -->
+                <button class="me-5" (click)="addEvent()">Add event</button>
+
+                <button (click)="viewEvent()">View event</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>

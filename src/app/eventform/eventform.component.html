@@ -1,0 +1,19 @@
+
+<h1 style="text-align: center;" class="mt-5 mb-5">Reminder history</h1>
+
+<table class="table" style="color: black; background-color: grey;">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Event Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of reminders">
+        <th scope="row">{{r.date}}</th>
+        <td>{{r.event}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a routerLink="/dashboard">HOME</a>

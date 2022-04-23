@@ -1,0 +1,16 @@
+.container{
+    align-content: center;
+}
+
+.card{
+    height: 370px;
+    width: 400px;
+    margin-top: 142px;
+    margin-left: 440px;
+background-color: coral;
+}
+
+.cardheader h2{
+    text-align: center;
+    color: white;
+}
